@@ -23,11 +23,11 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-                            <a class="dropdown-item" href="">
+                            <a class="dropdown-item" href="{{ route('users.show', Auth::id()) }}">
                                 <i class="far fa-user mr-2"></i>
                                 个人中心
                             </a>
-                            <a class="dropdown-item" href="">
+                            <a class="dropdown-item" href="{{ route('users.edit', Auth::id()) }}">
                                 <i class="far fa-edit mr-2"></i>
                                 编辑资料
                             </a>
