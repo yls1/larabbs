@@ -41,6 +41,8 @@ class UserRequest extends FormRequest
     public function messages()
     {
         return [
+            'avatar.mimes' => '头像必须是 jpeg, bmp, png, gif 格式的图片',
+            'avatar.dimensions' => '图片的清晰度不够，宽和高需要208px以上',
             'name.unique' => '用户名已被占用，请重新填写',
             'name.regex' => '用户名只支持英文、数字、横杠和下划线。',
             'name.between' => '用户名必须介于 3 - 25 个字符之间。',
